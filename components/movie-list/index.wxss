@@ -1,0 +1,32 @@
+/* components/movie-item/index.wxss */
+
+.movie-list-container {
+  background-color: #fff;
+  padding: 36rpx;
+  margin-bottom: 20rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.more {
+  color: #1f4ba5;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .movie-list::after {
+  content: '';
+  width: 210rpx
+} */
+.movie-container:nth-child(3n) {
+  margin-right: 0;
+}
+

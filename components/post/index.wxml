@@ -1,0 +1,19 @@
+<view class="post-container" bind:tap="onDetail" data-id="{{item.postId}}">
+  <view class="post-head">
+    <image class="post-avatar" src="{{item.avatar}}"></image>
+    <text>{{item.date}}</text>
+  </view>
+
+  <text class="post-title">{{item.title}}</text>
+
+  <image class="post-content-img" src="{{item.imgSrc}}"></image>
+
+  <text class="post-content">{{item.content}}</text>
+
+  <view class="post-footer">
+    <l-icon name="favor" color="#666" size="28" />
+    <text class="post-num">{{item.collection}}</text>
+    <l-icon name="eye" color="#666" size="32" />
+    <text class="post-num">{{item.reading}}</text>
+  </view>
+</view>

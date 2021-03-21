@@ -1,0 +1,10 @@
+<!--components/movie/index.wxml-->
+<view class="movie-container" bind:tap="onDetail" data-id="{{movie.id}}">
+  <image class="poster" src="{{movie.images && movie.images.large}}"></image>
+  <text class="name">{{movie.title}}</text>
+  <view class="rate">
+    <l-rate active-color="#FFDD55" disabled size="22" score="{{movie.rating.average / 2}}" inActive-color="#ddd">
+    </l-rate>
+    <text class="num">{{movie.rating.average}}</text>
+  </view>
+</view>

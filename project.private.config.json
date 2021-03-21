@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/post-detail/index",
+          "pathName": "pages/post-detail/index",
+          "query": "id=0",
+          "scene": null
+        },
+        {
+          "name": "pages/movies/index",
+          "pathName": "pages/movies/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movie-detail/index",
+          "pathName": "pages/movie-detail/index",
+          "query": "id=326",
+          "scene": null
+        },
+        {
+          "name": "pages/more-movie/index",
+          "pathName": "pages/more-movie/index",
+          "query": "type=in_theaters",
+          "scene": null
+        },
+        {
+          "name": "pages/movie-detail/index",
+          "pathName": "pages/movie-detail/index",
+          "query": "id=305&title=123",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

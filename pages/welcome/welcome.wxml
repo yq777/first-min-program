@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image class="avatar" src="/images/avatar/1.png"></image>
+  <text class="slogan">Hello,尧钦7</text>
+  <view class="journey-container" bind:tap="onTap">
+    <text class="journey-text">开启小程序之旅</text>
+  </view>
+</view>

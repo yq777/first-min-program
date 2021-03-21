@@ -1,0 +1,20 @@
+<!--pages/post-detail/index.wxml-->
+<view class="container">
+  <image class="head-img" src="{{detail.imgSrc}}"></image>
+  <image wx:if="{{player}}" class="music-log" bind:tap="onMusic" src="/images/music/music-stop.png"></image>
+  <image wx:else class="music-log" bind:tap="onMusic" src="/images/music/music-start.png"></image>
+  <view class="author-wrap">
+    <image class="author-avatar" src="{{detail.avatar}}"></image>
+    <text class="author-name">{{detail.author}}</text>
+    <text>发表于</text>
+    <text class="author-time">{{detail.dateTime}}</text>
+  </view>
+  <view class="title">{{detail.title}}</view>
+  <view class="tools">
+    <image class="tool-icon" bind:tap="onShare" src="/images/icon/share.png" />
+    <image wx:if="{{collectedFlag}}" class="tool-icon" bind:tap="onCollection" src="/images/icon/collection.png" />
+    <image wx:else class="tool-icon" bind:tap="onCollection" src="/images/icon/collection-anti.png"></image>
+    <view class="tool-line"></view>
+  </view>
+  <text class="content">{{detail.detail}}</text>
+</view>

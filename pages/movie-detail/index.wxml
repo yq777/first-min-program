@@ -1,0 +1,53 @@
+<!--pages/movie-detail/index.wxml-->
+<view class="container">
+  <image class="head-bg" src="{{detail.images.large}}" />
+  <view class="head">
+    <text class="title">{{detail.title}}</text>
+    <text class="from">{{conturies}}·{{detail.year}}</text>
+    <view class="person">
+      <text class="red_num">{{detail.wish_count}}</text>
+      <text> 人喜欢</text>
+      <text class="red_num gap">{{detail.comments_count}}</text>
+      <text> 条评论</text>
+    </view>
+  </view>
+  <image class="little-img" src="{{detail.images.large}}" bind:tap="previewImg" data-src="{{detail.images.large}}" />
+  <view class="info">
+    <text class="movie-title">{{detail.title}}</text>
+    <view class="label-value">
+      评分
+      <view class="person-name">
+        <l-rate active-color="#FFDD55" disabled size="22" score="{{detail.rating.average / 2}}" inActive-color="#ddd">
+        </l-rate>
+        <text class="num">{{detail.rating.average}}</text>
+      </view>
+    </view>
+    <view class="label-value">
+      导演
+      <text class="person-name">{{detail.casts[0].name}}</text>
+    </view>
+    <view class="label-value">
+      影人
+      <text class="person-name">{{convertNames}}</text>
+    </view>
+    <view class="label-value">
+      类型
+      <text class="person-name">{{genres}}</text>
+    </view>
+  </view>
+  <view class="des">
+    剧情简介
+    <view class="des-content">
+      {{detail.summary}}
+    </view>
+  </view>
+  <view class="movie-person">
+    影人
+    <scroll-view class="scroll-view-item_H" scroll-x="true" style="width: 100%">
+      <view class="movie-wrap" wx:for="{{detail.casts}}" wx:key="index">
+        <image class="person-img" src="{{item.avatars.large}}"></image>
+        <text class="star-name">{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

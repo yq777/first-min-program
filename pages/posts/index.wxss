@@ -1,0 +1,9 @@
+/* pages/posts/index.wxss */
+.swiper-content {
+  height: 460rpx;
+}
+
+.swiper-content image {
+  width: 100%;
+  height: 460rpx;
+}

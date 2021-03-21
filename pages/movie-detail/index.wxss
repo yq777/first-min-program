@@ -1,0 +1,129 @@
+/* pages/movie-detail/index.wxss */
+page {
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-bg {
+  height: 320rpx;
+  width: 100%;
+  filter: blur(20rpx);
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  margin: 30rpx 0;
+  color: #fff;
+  font-weight: blod;
+  letter-spacing: 2rpx;
+}
+
+.from {
+  font-size: 24rpx;
+  margin-bottom: 50rpx;
+  color: #fff;
+}
+
+.person {
+  font-size: 20rpx;
+  color: #ddd;
+}
+
+.red_num {
+  color: #C22A1E;
+}
+
+.gap {
+  margin-left: 20rpx;
+}
+
+.little-img {
+  position: absolute;
+  top: 200rpx;
+  right: 20rpx;
+  width: 140rpx;
+  height: 180rpx;
+}
+
+.info {
+  margin-top: 15rpx;
+  padding: 0 20rpx 40rpx;
+  font-size: 24rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.movie-title {
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.label-value {
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.person-name {
+  margin-left: 20rpx;
+}
+
+.num {
+  margin-left: 20rpx;
+}
+
+.des {
+  padding: 40rpx 20rpx;
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+  border-bottom: 2rpx solid #ddd;
+  color: #999;
+}
+
+.des-content {
+  padding-top: 20rpx;
+  line-height: 1.5;
+  color: #666;
+}
+
+.movie-person {
+  padding: 40rpx 20rpx;
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+  color: #999;
+}
+
+.scroll-view-item_H {
+  display: flex;
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx
+}
+
+.movie-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+.person-img {
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.star-name {
+  margin-top: 10rpx
+}
