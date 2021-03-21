@@ -1,0 +1,86 @@
+/* pages/post-detail/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.head-img {
+  width: 100%;
+  height: 460rpx;
+}
+
+.music-log {
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  left: 50%;
+  top: 230rpx;
+  transform: translate(-50%, -50%);
+}
+
+.author-wrap {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.author-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 20rpx;
+}
+
+.author-name {
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+
+.author-time {
+  margin-left: 20rpx;
+
+}
+
+.title {
+  margin: 20rpx 0;
+  font-size: 34rpx;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 20rpx;
+  position: relative;
+}
+
+.tool-icon {
+  width: 64rpx;
+  height: 64rpx;
+  position: relative;
+  z-index: 100;
+}
+
+.tool-icon:first-child {
+  margin-left: 20rpx;
+}
+
+.tool-line {
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  height: 2rpx;
+  background-color: #ddd;
+}
+
+.content {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  line-height: 1.5;
+  color: #666;
+  letter-spacing: 4rpx;
+}

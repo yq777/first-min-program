@@ -1,0 +1,12 @@
+<!--pages/posts/index.wxml-->
+<view>
+  <swiper class="swiper-content" autoplay="{{true}}" indicator-dots="{{true}}" indicator-active-color="#fff"
+    interval="{{3000}}">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index" data-id="{{item.postId}}" bind:tap="onDetail">
+      <image src="{{item.url}}"></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{postList}}" wx:key="postId">
+    <post item="{{item}}" />
+  </block>
+</view>

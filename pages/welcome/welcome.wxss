@@ -1,0 +1,37 @@
+/* pages/welcome/welcome.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b3d4bd;
+  height: 100vh;
+}
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-top: 160rpx;
+}
+
+.slogan {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: blod;
+}
+
+.journey-container {
+  margin-top: 100rpx;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 2rpx solid #405f80;
+  border-radius: 10rpx;
+}
+
+.journey-text {
+  color: #405f80;
+  font-size: 24rpx;
+  font-weight: bold;
+}

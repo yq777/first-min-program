@@ -1,0 +1,11 @@
+<!--pages/movies/index.wxml-->
+<view class="container">
+  <l-search-bar l-class="search" placeholder="盗梦空间" bind:linconfirm="onSearch" bind:lincancel="onCancel" />
+  <block wx:if="{{!searchFlag}}">
+    <movie-list wx:for="{{subjects}}" wx:key="index" title="{{item.title}}" movies="{{item.movies}}" url="{{item.url}}"
+      f-class="movie-list" />
+  </block>
+  <view wx:else class="search-container">
+    <movie wx:for="{{searchList}}" wx:key="index" movie="{{item}}"></movie>
+  </view>
+</view>
